@@ -26,9 +26,9 @@ export class PipelineStack extends Stack {
       stageName: "Source",
       actions: [
         new GitHubSourceAction({
-          owner: "EnriqueAcordero",
+          owner: "enriqueacordero",
           repo: "aws-pipeline",
-          branch: "master",
+          branch: "main",
           actionName: "Pipeline_Source",
           oauthToken: SecretValue.secretsManager("github-token"),
           output: sourceOutput,
